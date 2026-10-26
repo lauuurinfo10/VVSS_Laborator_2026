@@ -437,3 +437,4 @@ _deps/
 
 # Official VS Code C# Dev Kit Extension exclusion
 #*.lscache
+.vscode/settings.json
