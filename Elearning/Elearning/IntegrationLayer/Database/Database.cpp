@@ -44,14 +44,14 @@ void Database::connectToDatabase()
         return;
     }
 
-    SQLWCHAR retConnString[SQL_RETURN_CODE_LENGTH]; // echivalentul lui std::wstring
+    SQLCHAR retConnString[SQL_RETURN_CODE_LENGTH]; // echivalentul lui std::wstring
     //conversie pt connString din std::string -> wstring
     const std::wstring wConnString(m_connString.begin(), m_connString.end());
 
     auto status = SQLDriverConnect(
         m_sqlConnHandle,
         NULL,
-        (SQLWCHAR*)wConnString.c_str(),
+        (SQLCHAR*)wConnString.c_str(),
         SQL_NTS,
         retConnString,
         1024,

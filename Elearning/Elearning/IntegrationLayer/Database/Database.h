@@ -2,7 +2,7 @@
 #pragma once
 
 #define byte win_byte_override
-#include "Windows.h"
+
 
 #include <sqlext.h> // ODBC
 #include <sqltypes.h> 

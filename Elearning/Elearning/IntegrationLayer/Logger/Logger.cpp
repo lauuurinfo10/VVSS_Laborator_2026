@@ -25,7 +25,7 @@ void Logger::log(const std::string& message, Level level)
 	}
 	std::time_t now = std::time(nullptr);
 	std::tm tm_local;
-	localtime_s(&tm_local, &now);
+	localtime_r(&now, &tm_local);
 	m_os << "[" << std::put_time(&tm_local, "%Y-%m-%d %H:%M:%S") << "]";
 	m_os << " - " << message << "\n";
 }
