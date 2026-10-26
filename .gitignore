@@ -424,5 +424,22 @@ FodyWeavers.xsd
 *.msm
 *.msp
 
+
+
+
+# CMake generated files
+/build/
+/out/
+CMakeCache.txt
+CMakeFiles/
+Makefile
+*.cmake
+!CMakeLists.txt
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps/
+
 # Official VS Code C# Dev Kit Extension exclusion
 #*.lscache
